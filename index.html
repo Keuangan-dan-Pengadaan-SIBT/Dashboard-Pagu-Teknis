@@ -229,7 +229,7 @@
                 <div class="flex justify-between items-start">
                     <div>
                         <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Alokasi Pagu / Bulan</p>
-                        <h3 class="text-xl font-extrabold text-white mt-1">Rp 64.923.083</h3>
+                        <h3 class="text-xl font-extrabold text-white mt-1">Rp 95.322.000</h3>
                     </div>
                     <div class="p-2.5 bg-sky-500/10 text-sky-400 rounded-xl border border-sky-500/20">
                         <i class="fa-solid fa-calendar-check text-lg"></i>
@@ -301,7 +301,7 @@
                                 <i class="fa-solid fa-chart-column text-sky-400"></i>
                                 Trend Realisasi Varcost vs Pagu Bulanan (Jan – Des 2026)
                             </h3>
-                            <p class="text-xs text-slate-400">Sesuai data Sheet Top Up Non PO (Pagu Bulanan Rp 64.923.083)</p>
+                            <p class="text-xs text-slate-400">Garis merah = Batas pagu bulanan (Rp 95.322.000). Batang merah = melebihi pagu.</p>
                         </div>
                     </div>
                     <div class="relative h-72 w-full">
@@ -476,7 +476,7 @@
     <script>
         var DATASTORE = {
             contractTotal: 1143864000,
-            monthlyPagu: 64923083,
+            monthlyPagu: 95322000,
             
             monthsList: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"],
 
@@ -568,18 +568,18 @@
             ],
 
             monthlyTrend: [
-                { id: "Jan-26", label: "Jan", ot: 4587000, sppd: 62253805, shift: 2843000, total: 69683805, pagu: 64923083 },
-                { id: "Feb-26", label: "Feb", ot: 10824000, sppd: 91435462, shift: 2546000, total: 104805462, pagu: 64923083 },
-                { id: "Mar-26", label: "Mar", ot: 10483000, sppd: 76187626, shift: 4057000, total: 90727626, pagu: 64923083 },
-                { id: "Apr-26", label: "Apr", ot: 11264000, sppd: 93936345, shift: 1968000, total: 107168345, pagu: 64923083 },
-                { id: "Mei-26", label: "Mei", ot: 15741000, sppd: 34949180, shift: 4414000, total: 55104180, pagu: 64923083 },
-                { id: "Jun-26", label: "Jun", ot: 7908000, sppd: 51842728, shift: 2200000, total: 61950728, pagu: 64923083 },
-                { id: "Jul-26", label: "Jul", ot: 7724000, sppd: 88650637, shift: 1383000, total: 97757637, pagu: 64923083 },
-                { id: "Agu-26", label: "Agu", ot: 11830000, sppd: 108453778, shift: 1106000, total: 121389778, pagu: 64923083 },
-                { id: "Sep-26", label: "Sep", ot: 0, sppd: 525000, shift: 97000, total: 622000, pagu: 64923083 },
-                { id: "Oct-26", label: "Okt", ot: null, sppd: null, shift: null, total: null, pagu: 64923083 },
-                { id: "Nov-26", label: "Nov", ot: null, sppd: null, shift: null, total: null, pagu: 64923083 },
-                { id: "Dec-26", label: "Des", ot: null, sppd: null, shift: null, total: null, pagu: 64923083 }
+                { id: "Jan-26", label: "Jan", ot: 4587000, sppd: 62253805, shift: 2843000, total: 69683805, pagu: 95322000 },
+                { id: "Feb-26", label: "Feb", ot: 10824000, sppd: 91435462, shift: 2546000, total: 104805462, pagu: 95322000 },
+                { id: "Mar-26", label: "Mar", ot: 10483000, sppd: 76187626, shift: 4057000, total: 90727626, pagu: 95322000 },
+                { id: "Apr-26", label: "Apr", ot: 11264000, sppd: 93936345, shift: 1968000, total: 107168345, pagu: 95322000 },
+                { id: "Mei-26", label: "Mei", ot: 15741000, sppd: 34949180, shift: 4414000, total: 55104180, pagu: 95322000 },
+                { id: "Jun-26", label: "Jun", ot: 7908000, sppd: 51842728, shift: 2200000, total: 61950728, pagu: 95322000 },
+                { id: "Jul-26", label: "Jul", ot: 7724000, sppd: 88650637, shift: 1383000, total: 97757637, pagu: 95322000 },
+                { id: "Agu-26", label: "Agu", ot: 11830000, sppd: 108453778, shift: 1106000, total: 121389778, pagu: 95322000 },
+                { id: "Sep-26", label: "Sep", ot: 0, sppd: 525000, shift: 97000, total: 622000, pagu: 95322000 },
+                { id: "Oct-26", label: "Okt", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 },
+                { id: "Nov-26", label: "Nov", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 },
+                { id: "Dec-26", label: "Des", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 }
             ],
 
             terpaguBidang: [
@@ -699,7 +699,7 @@
                         datasets: [
                             { 
                                 type: 'line', 
-                                label: 'Pagu / Bulan (Rp 64.92 Jt)', 
+                                label: 'Batas Pagu Bulanan (Rp 95.32 Jt)', 
                                 data: months.map(function(m) { return m.pagu; }), 
                                 borderColor: '#f43f5e', 
                                 borderWidth: 2, 
