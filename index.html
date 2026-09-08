@@ -158,7 +158,7 @@
                 <div>
                     <label class="block text-[11px] font-semibold text-slate-400 mb-1">Periode Realisasi Bulan</label>
                     <select id="filterMonth" onchange="triggerFilterUpdate()" class="w-full text-xs bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-2.5 focus:ring-2 focus:ring-sky-500 outline-none">
-                        <option value="ALL">Semua Bulan (Jan - Des 2026)</option>
+                        <option value="ALL">Semua Bulan (Jan - Sep 2026)</option>
                         <option value="Jan-26">Januari 2026</option>
                         <option value="Feb-26">Februari 2026</option>
                         <option value="Mar-26">Maret 2026</option>
@@ -168,9 +168,6 @@
                         <option value="Jul-26">Juli 2026</option>
                         <option value="Agu-26">Agustus 2026</option>
                         <option value="Sep-26">September 2026</option>
-                        <option value="Okt-26">Oktober 2026</option>
-                        <option value="Nov-26">November 2026</option>
-                        <option value="Des-26">Desember 2026</option>
                     </select>
                 </div>
 
@@ -178,12 +175,12 @@
                     <label class="block text-[11px] font-semibold text-slate-400 mb-1">Sub Bidang & Unit Layanan</label>
                     <select id="filterUnit" onchange="triggerFilterUpdate()" class="w-full text-xs bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-2.5 focus:ring-2 focus:ring-sky-500 outline-none">
                         <option value="ALL">Semua Unit Kerja Regional</option>
-                        <option value="OPERASI">Sub Bidang Operasi, Pemeliharaan & Aset</option>
-                        <option value="DELIVERY">Sub Bidang Pembangunan & Delivery Layanan</option>
-                        <option value="MALUKU">Unit Layanan Maluku & Maluku Utara</option>
-                        <option value="PALU">Unit Layanan Palu, Kendari & Mamuju</option>
-                        <option value="PAPUA">Unit Layanan Papua & Papua Barat</option>
-                        <option value="SULUTENGGO">Unit Layanan Sulutenggo</option>
+                        <option value="OPERASI">SUB BIDANG OPERASI, PEMELIHARAAN DAN ASET SULAWESI DAN IBT</option>
+                        <option value="DELIVERY">SUB BIDANG PEMBANGUNAN DAN DELIVERY LAYANAN SULAWESI DAN IBT</option>
+                        <option value="MALUKU">UNIT LAYANAN MALUKU DAN MALUKU UTARA</option>
+                        <option value="PALU">UNIT LAYANAN PALU, KENDARI DAN MAMUJU</option>
+                        <option value="PAPUA">UNIT LAYANAN PAPUA DAN PAPUA BARAT</option>
+                        <option value="SULUTENGGO">UNIT LAYANAN SULUTENGGO</option>
                     </select>
                 </div>
 
@@ -299,9 +296,9 @@
                         <div>
                             <h3 class="text-sm font-bold text-white flex items-center gap-2">
                                 <i class="fa-solid fa-chart-column text-sky-400"></i>
-                                Trend Realisasi Varcost vs Pagu Bulanan (Jan – Des 2026)
+                                Trend Realisasi Varcost vs Pagu Bulanan (Jan – Sep 2026)
                             </h3>
-                            <p class="text-xs text-slate-400">Garis merah = Batas pagu bulanan (Rp 95.322.000). Batang merah = melebihi pagu.</p>
+                            <p class="text-xs text-slate-400">Garis merah mengindikasikan batas pagu bulanan (Rp 95,32 Juta). Batang merah = melebihi pagu.</p>
                         </div>
                     </div>
                     <div class="relative h-72 w-full">
@@ -406,7 +403,7 @@
                             <tr>
                                 <th class="p-3.5">Unit Kerja / Sub Bidang</th>
                                 <th class="p-3.5 text-center">QTY TAD</th>
-                                <th class="p-3.5 text-right font-bold text-amber-400">Pagu 12 Bulan</th>
+                                <th class="p-3.5 text-right font-bold text-amber-400">Pagu Tahunan (12 Bln)</th>
                                 <th class="p-3.5 text-right">Lembur (OT)</th>
                                 <th class="p-3.5 text-right">SPPD</th>
                                 <th class="p-3.5 text-right">Shifting</th>
@@ -447,7 +444,7 @@
                             <i class="fa-solid fa-sack-dollar text-amber-400"></i>
                             Total Anggaran Terpagu Masing-Masing Bidang (Sheet Top Up Non PO)
                         </h3>
-                        <p class="text-xs text-slate-400">Sesuai data master Sheet Top Up Non PO</p>
+                        <p class="text-xs text-slate-400">Sesuai data master Sheet Top Up Non PO (PO #4500027046)</p>
                     </div>
                 </div>
 
@@ -478,7 +475,7 @@
             contractTotal: 1143864000,
             monthlyPagu: 95322000,
             
-            monthsList: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"],
+            monthsList: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep"],
 
             units: [
                 { 
@@ -491,9 +488,9 @@
                     sppd: 93396384, 
                     shift: 20614000, 
                     realisasi: 144287384,
-                    monthlyOt: [3500000, 2100000, 3100000, 4200000, 4800000, 2500000, 2700000, 4377000, null, null, null, null],
-                    monthlySppd: [12000000, 8500000, 11000000, 14500000, 16000000, 9000000, 9800000, 12596384, null, null, null, null],
-                    monthlyShift: [2000000, 1800000, 1900000, 2200000, 2400000, 1700000, 1800000, 6814000, null, null, null, null]
+                    monthlyOt: [3500000, 2100000, 3100000, 4200000, 4800000, 2500000, 2700000, 4377000, null],
+                    monthlySppd: [12000000, 8500000, 11000000, 14500000, 16000000, 9000000, 9800000, 12596384, null],
+                    monthlyShift: [2000000, 1800000, 1900000, 2200000, 2400000, 1700000, 1800000, 6814000, null]
                 },
                 { 
                     id: "DELIVERY", 
@@ -505,9 +502,9 @@
                     sppd: 75967587, 
                     shift: 0, 
                     realisasi: 80011587,
-                    monthlyOt: [500000, 400000, 600000, 550000, 700000, 400000, 450000, 444000, null, null, null, null],
-                    monthlySppd: [8000000, 6500000, 7500000, 9200000, 8500000, 7000000, 8200000, 21067587, null, null, null, null],
-                    monthlyShift: [null, null, null, null, null, null, null, null, null, null, null, null]
+                    monthlyOt: [500000, 400000, 600000, 550000, 700000, 400000, 450000, 444000, null],
+                    monthlySppd: [8000000, 6500000, 7500000, 9200000, 8500000, 7000000, 8200000, 21067587, null],
+                    monthlyShift: [null, null, null, null, null, null, null, null, null]
                 },
                 { 
                     id: "MALUKU", 
@@ -519,9 +516,9 @@
                     sppd: 102018192, 
                     shift: 0, 
                     realisasi: 109316192,
-                    monthlyOt: [800000, 700000, 900000, 1100000, 1000000, 800000, 850000, 1148000, null, null, null, null],
-                    monthlySppd: [11000000, 9500000, 10500000, 13000000, 12000000, 10000000, 11500000, 24518192, null, null, null, null],
-                    monthlyShift: [null, null, null, null, null, null, null, null, null, null, null, null]
+                    monthlyOt: [800000, 700000, 900000, 1100000, 1000000, 800000, 850000, 1148000, null],
+                    monthlySppd: [11000000, 9500000, 10500000, 13000000, 12000000, 10000000, 11500000, 24518192, null],
+                    monthlyShift: [null, null, null, null, null, null, null, null, null]
                 },
                 { 
                     id: "PALU", 
@@ -533,9 +530,9 @@
                     sppd: 108325000, 
                     shift: 0, 
                     realisasi: 120884000,
-                    monthlyOt: [1200000, 1100000, 1300000, 1500000, 1400000, 1200000, 1300000, 3559000, null, null, null, null],
-                    monthlySppd: [12000000, 10000000, 11000000, 14000000, 13000000, 11000000, 12000000, 25325000, null, null, null, null],
-                    monthlyShift: [null, null, null, null, null, null, null, null, null, null, null, null]
+                    monthlyOt: [1200000, 1100000, 1300000, 1500000, 1400000, 1200000, 1300000, 3559000, null],
+                    monthlySppd: [12000000, 10000000, 11000000, 14000000, 13000000, 11000000, 12000000, 25325000, null],
+                    monthlyShift: [null, null, null, null, null, null, null, null, null]
                 },
                 { 
                     id: "PAPUA", 
@@ -547,9 +544,9 @@
                     sppd: 101242261, 
                     shift: 0, 
                     realisasi: 101970261,
-                    monthlyOt: [100000, 80000, 90000, 100000, 90000, 70000, 80000, 118000, null, null, null, null],
-                    monthlySppd: [11000000, 9000000, 10000000, 13000000, 12000000, 10000000, 11000000, 25242261, null, null, null, null],
-                    monthlyShift: [null, null, null, null, null, null, null, null, null, null, null, null]
+                    monthlyOt: [100000, 80000, 90000, 100000, 90000, 70000, 80000, 118000, null],
+                    monthlySppd: [11000000, 9000000, 10000000, 13000000, 12000000, 10000000, 11000000, 25242261, null],
+                    monthlyShift: [null, null, null, null, null, null, null, null, null]
                 },
                 { 
                     id: "SULUTENGGO", 
@@ -561,9 +558,9 @@
                     sppd: 127285137, 
                     shift: 0, 
                     realisasi: 152740137,
-                    monthlyOt: [2500000, 2200000, 2400000, 2800000, 2600000, 2300000, 2500000, 5355000, null, null, null, null],
-                    monthlySppd: [14000000, 12000000, 13000000, 16000000, 15000000, 13000000, 14000000, 30285137, null, null, null, null],
-                    monthlyShift: [null, null, null, null, null, null, null, null, null, null, null, null]
+                    monthlyOt: [2500000, 2200000, 2400000, 2800000, 2600000, 2300000, 2500000, 5355000, null],
+                    monthlySppd: [14000000, 12000000, 13000000, 16000000, 15000000, 13000000, 14000000, 30285137, null],
+                    monthlyShift: [null, null, null, null, null, null, null, null, null]
                 }
             ],
 
@@ -576,10 +573,7 @@
                 { id: "Jun-26", label: "Jun", ot: 7908000, sppd: 51842728, shift: 2200000, total: 61950728, pagu: 95322000 },
                 { id: "Jul-26", label: "Jul", ot: 7724000, sppd: 88650637, shift: 1383000, total: 97757637, pagu: 95322000 },
                 { id: "Agu-26", label: "Agu", ot: 11830000, sppd: 108453778, shift: 1106000, total: 121389778, pagu: 95322000 },
-                { id: "Sep-26", label: "Sep", ot: 0, sppd: 525000, shift: 97000, total: 622000, pagu: 95322000 },
-                { id: "Oct-26", label: "Okt", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 },
-                { id: "Nov-26", label: "Nov", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 },
-                { id: "Dec-26", label: "Des", ot: null, sppd: null, shift: null, total: null, pagu: 95322000 }
+                { id: "Sep-26", label: "Sep", ot: 0, sppd: 525000, shift: 97000, total: 622000, pagu: 95322000 }
             ],
 
             terpaguBidang: [
@@ -874,7 +868,17 @@
                 sumShift += u.shift; 
                 sumReal += u.realisasi;
 
-                var pct = u.paguTahunan ? ((u.realisasi / u.paguTahunan) * 100).toFixed(1) + '%' : '-';
+                var pctVal = u.paguTahunan ? (u.realisasi / u.paguTahunan) * 100 : 0;
+                var pctStr = pctVal.toFixed(1) + '%';
+                
+                var statusBadge = '';
+                if (pctVal <= 75) {
+                    statusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full">SAFE (' + pctStr + ')</span>';
+                } else if (pctVal <= 100) {
+                    statusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-full">WARNING (' + pctStr + ')</span>';
+                } else {
+                    statusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-full">OVER (' + pctStr + ')</span>';
+                }
 
                 rowsHtml += '<tr class="hover:bg-slate-900/60 transition">' +
                     '<td class="p-3.5 font-bold text-slate-100">' + u.fullName + '</td>' +
@@ -884,12 +888,22 @@
                     '<td class="p-3.5 text-right text-slate-300">' + formatIDR(u.sppd) + '</td>' +
                     '<td class="p-3.5 text-right text-slate-300">' + formatIDR(u.shift) + '</td>' +
                     '<td class="p-3.5 text-right font-bold text-sky-400">' + formatIDR(u.realisasi) + '</td>' +
-                    '<td class="p-3.5 text-center"><span class="px-2.5 py-1 text-[10px] font-extrabold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full">' + pct + '</span></td>' +
+                    '<td class="p-3.5 text-center">' + statusBadge + '</td>' +
                 '</tr>';
             }
 
             tbody.innerHTML = rowsHtml;
-            var totalPct = sumPaguTahunan > 0 ? ((sumReal / sumPaguTahunan) * 100).toFixed(1) + '%' : '62.00%';
+            var totalPctVal = sumPaguTahunan > 0 ? (sumReal / sumPaguTahunan) * 100 : 62.0;
+            var totalPctStr = totalPctVal.toFixed(1) + '%';
+            var totalStatusBadge = '';
+            if (totalPctVal <= 75) {
+                totalStatusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full">SAFE (' + totalPctStr + ')</span>';
+            } else if (totalPctVal <= 100) {
+                totalStatusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded-full">WARNING (' + totalPctStr + ')</span>';
+            } else {
+                totalStatusBadge = '<span class="px-2.5 py-1 text-[10px] font-extrabold bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-full">OVER (' + totalPctStr + ')</span>';
+            }
+
             if (tfoot) {
                 tfoot.innerHTML = '<tr>' +
                     '<td class="p-3.5 font-bold">TOTAL REGIONAL</td>' +
@@ -899,7 +913,7 @@
                     '<td class="p-3.5 text-right font-bold">' + formatIDR(sumSppd) + '</td>' +
                     '<td class="p-3.5 text-right font-bold">' + formatIDR(sumShift) + '</td>' +
                     '<td class="p-3.5 text-right font-bold text-sky-400">' + formatIDR(sumReal) + '</td>' +
-                    '<td class="p-3.5 text-center font-bold"><span class="px-2.5 py-1 text-[10px] font-extrabold bg-sky-500/20 text-sky-400 border border-sky-500/30 rounded-full">' + totalPct + '</span></td>' +
+                    '<td class="p-3.5 text-center font-bold">' + totalStatusBadge + '</td>' +
                 '</tr>';
             }
         }
